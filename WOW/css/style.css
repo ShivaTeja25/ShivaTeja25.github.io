@@ -1,0 +1,74 @@
+header{
+	width: 100%;
+	height: 80px;
+	background-color: #000080;
+}
+
+#title-bar{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 50px;
+	font-size: 20px;
+	color: white;
+}
+a{
+	padding-right: 10px;
+	color: white;
+}
+div.buttons{
+	padding-bottom: 3%;
+	padding-top: 3%;
+}
+.first{
+	background-color: lightgreen;
+	height: 600px;
+	width: 100%;
+}
+#profile{
+	height: 350px;
+	width: 350px;
+	padding-top: 50px;
+}
+
+.row{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.second{
+	height: 800px;
+	width: 100%;
+	background-color: white;
+}
+#images{
+	height: 300px;
+	width: 300px;
+	padding: 3px;
+
+}
+
+div{
+	padding: 0;
+}
+.third{
+	height: 300px;
+	width: 100%;
+	background-color: lightgreen;
+}
+.four{
+	height: 450px;
+	width: 100%;
+	background-color: white;
+}
+.contact{
+	padding-top: 20px;
+}
+.five{
+	height: 150px;
+	width: 100%;
+	background-color: darkblue;
+}
+#foot{
+	padding-top: 20px;
+}
