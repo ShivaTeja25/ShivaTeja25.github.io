@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>wow assesment 2
+        </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+            integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+        <style type="text/css">
+            * {
+    
+                margin: 0px;
+                padding: 0px;
+                box-sizing: #e9e9e9;
+                background: border-box;
+                font-family: "First mono", monospace, sans-serif;
+                font-size: 20px;
+    
+    
+    
+            }
+    
+            .container {
+    
+                width: 400px;
+                height: 550px;
+                padding: 1.5rem;
+                margin: 50px;
+                background: #e9e9e9;
+                border-radius: 30px;
+                box-shadow: -6px -6px 9px #fff,
+                    6px 6px 9px #c0bcbc;
+    
+            }
+    
+            body {
+    
+                width: 100vw;
+                height: 100vh;
+                background: #e9e9e9;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+    
+            button {
+                width: 42px;
+                height: 45px;
+                border: none;
+                font-size: 30px;
+                align-items: center;
+                margin: 10px;
+                border-radius: 50%;
+                background: #e9e9e9;
+                box-shadow: 6px 6px 12px #bababa, -6px -6px 12px #ffffff;
+            }
+            input {
+                width: 155px;
+                height: 90px;
+                padding-right: 20px;
+                background: #e9e9e9;
+                text-align: right;
+                outline: none;
+                border-radius: 30px;
+                box-shadow: inset-3px -3px 8px #fff,
+                    inset 3px 3px 8px #c0bcbc;
+                text-shadow: -1px -1px 2px #fff, 2px 2px 2px rgba(0, 0 0, 0.4);
+            }
+    
+            #operation1 {
+                color: white;
+                outline: none;
+                background-color: gold;
+            }
+            #operation2 {
+                color: white;
+                outline: none;
+                background-color: darkred;
+            }
+            #operation3 {
+                color: white;
+                outline: none;
+                background-color: cyan;
+            }
+            #operation4 {
+                color: white;
+                outline: none;
+                background-color: green;
+            }
+            #numbers{
+                outline: none;
+            }
+    
+            #result {
+                color: white;
+                height: 300px;
+                outline: none;
+                background-color: #00cc96;
+            }
+    
+            #Clear {
+                color: white;
+                outline: none;
+                background-color: #ff4d4d;
+            }
+    
+            #Dot {
+                color: white;
+                outline: none;
+                background-color: #df80ff;
+    
+            }
+            #textbox1 , #textbox2{
+            
+            font-size:30px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <main class="display-align">
+            <div class="container">
+    
+                <div class="row">
+                    <div class="col" class="display-block">
+                        <input type="text" id="textbox1" placeholder="0">
+                    </div>
+                    
+                    <div class="col">
+                    <input type="text" id="textbox2" placeholder="Results">
+                    </div>
+                </div>
+    
+                <div class="row my-2 ">
+                    <div class="col">
+                        <button id="operation1">+</button>
+                    </div>
+    
+                    <div class="col">
+                        <button id="operation2">-</button>
+                    </div>
+    
+                    <div class="col">
+                        <button id="operation3">*</button>
+                    </div>
+    
+                    <div class="col">
+                        <button id="operation4">/</button>
+                    </div>
+    
+                </div>
+                <div class="row">
+                    <div class="col-9">
+                        <div class="row mb-3">
+                            <div class="col">
+                                <button id="numbers">7</button>
+                            </div>
+    
+                            <div class="col">
+                                <button id="numbers">8</button>
+                            </div>
+    
+                            <div class="col">
+                                <button id="numbers">9</button>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col">
+                                <button id="numbers">4</button>
+                            </div>
+                            <div class="col">
+                                <button id="numbers">5</button>
+                            </div>
+                            <div class="col">
+                                <button id="numbers">6</button>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col">
+                                <button id="numbers">1</button>
+                            </div>
+                            <div class="col">
+                                <button id="numbers">2</button>
+                            </div>
+                            <div class="col">
+                                <button id="numbers">3</button>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col">
+                                <button id="numbers">0</button>
+                            </div>
+                            <div class="col">
+                                <button id="Dot">.</button>
+                            </div>
+                            <div class="col">
+                                <button id="Clear">AC</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <button id="result">=</button>
+                    </div>
+                </div>
+    
+    
+            </div>
+        </main>
+    
+    
+        <script type="text/javascript">
+            var textbox1 = document.getElementById('textbox1');
+             var textbox2= document.getElementById('textbox2');
+            buttons = document.querySelectorAll('button');
+            text1Value = ''
+          text2Value = ''
+            for (item of buttons) {
+                item.addEventListener('click', (e) => {
+                    buttonText = e.target.innerText
+                    if (buttonText == 'AC') {
+                        text1Value = ''
+                        textbox1.value = text1Value;
+                        text2Value = ''
+                        textbox2.value=text2Value;
+                    }
+                    else if (buttonText == "=") {
+                        textbox2.value = eval(textbox1.value);
+                    }
+                    else {
+                        text1Value += buttonText
+                        textbox1.value = text1Value;
+                    }
+                })
+            }
+        </script>
+    
+    </body>
+    
+    </html>
