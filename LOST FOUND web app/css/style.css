@@ -1,0 +1,123 @@
+
+/* main page header */
+header.main-page{
+    background-color: white;
+    height: 20%;
+    border-radius: 40px;
+    border: 40px;
+    width: 90%;
+    opacity: 0.5;
+   
+}
+.main-logo{
+    height: 150px;
+    width: 200px;
+}
+
+#logo{
+    padding: 0;
+    margin: 0;
+}
+/* main page background */
+body.mainpagebody{
+    background-image: url(backgud.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%100%;
+
+}
+/* main page header text */
+header h1{
+    color: #000000;
+    text-align: center;
+    font-variant: small-caps;
+    font-style: oblique;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-size: 70px;
+    opacity: 1;
+
+}
+
+/* image and buttons section */
+section.imgbutsec{
+    padding-top: 150px;
+}
+
+
+
+/* main page lost found buttons */
+body button {
+    border: 0;
+    height: 14%;
+    width: 30%;   
+    background: #fa2c0a;
+    border-radius: 4px;
+    box-shadow: 0 5px 0 #ff0505b8;
+    color: white;
+    font: inherit;
+   padding-top: 1%;
+   padding-bottom: 1%;
+    transition: all .1s linear;
+  }
+  button:active {
+    box-shadow: 0 2px 0 #006599;
+    transform: translateY(3px);
+  }
+ 
+ /* found page header*/
+header.found-page{
+     background-color: aqua;
+     height: 10%;
+     border-radius: 0;
+     border: 0;
+}
+/* text in found page header*/
+h1.headertxt-foundpage{
+    color: white;
+    text-align: center;
+    font-variant: small-caps;
+    font-style: oblique;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 50px;
+}
+ /* lost page header*/
+header.lost-page{
+     background-color: #2cb220bf;
+     height: 10%;
+     border-radius: 0;
+     border: 0;
+}
+/* text in lost page header*/
+h1.headertxt-lostpage{
+    color: white;
+    text-align: center;
+    font-variant: small-caps;
+    font-style: oblique;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 50px;
+}
+/* founduser details */
+.reporting{
+    padding-left: 50px;
+    padding-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

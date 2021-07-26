@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="css/style.css">
+
+	<title>Found an item</title>
+</head>
+<body>
+   <header class="found-page">
+   	 <div>
+   	 	<h1 class="headertxt-foundpage">REPORTING A FOUND ITEM</h1> 	
+   	 </div>
+   </header>
+
+   <section>
+   	<h3 style="color: darkblue; padding-left: 50px;">REPORT FOUND ITEM</h3>
+
+      <form action="upload.php" method="post" enctype="multipart/form-data">
+
+         <div class="reporting">
+   	     <label>Name:</label><br>
+   	     <input type="text" name="name">
+         </div>
+
+         <div class="reporting">   
+            <label>Description of Item Found:</label><br>
+            <textarea type="text" name="description" rows="3" cols="40"></textarea><br>
+            <p><span style="color:red">**</span>include date,place where you found the item<span style="color:red">**</span></p>
+         </div>
+
+         <div class="reporting">
+            <label>Upload picture of item here: </label><br>
+            <input type="file" name="image"><br>
+            <div><span style="color:red">**</span>size of image must be less than 1MB<span style="color:red">**</span></div>
+         </div>
+
+         <h4 style="color:darkblue; padding-left: 50px; padding-top: 20px; ">PROVIDE YOUR CONTACT DETAILS</h4>
+         
+          <div style="padding-left: 50px;">   
+            <p>Please ensure that details you provide are correct</p><br>
+            <textarea type="text" name="contact" rows="4" cols="40"></textarea>
+         </div>
+
+         <div style="padding-left: 50px;">
+            <br>
+            <input type="submit" name="submit">
+         </div>
+
+
+      </form>
+   </section>
+
+
+</body>
+</html>
